@@ -94,13 +94,14 @@ button{
     display: flex;
     gap: 40px;
     margin-left: 76px;
+    
 
 }
 .header-menu-item{
-    
 }
 
 .header-menu-link{
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -113,7 +114,8 @@ button{
     color: var(--accent-color);
 }
 .active{
-    position: relative;
+    
+    color: var(--accent-color);
 }
 .active::after{
     content: '';
@@ -121,8 +123,8 @@ button{
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 4px;
-    display: block;
     position: absolute;
+    left: 0;
     top: 43px;
     
 }
@@ -411,7 +413,7 @@ button{
 .filter-btn:focus{
     color: var(--primary-white);
     background-color: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    border: 1px solid transparent;
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
